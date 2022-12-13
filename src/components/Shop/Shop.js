@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Shop.css";
-import ShopContext from "../../store/shop-store";
-import FilterComponent from "../ui/FilterComponent/FilterComponent";
-import AccordionCard from "../ui/Accordion/Accordion";
-import Products from "../../pages/Products";
-import SubHeader from "../SubHeader/SubHeader";
+// import ShopContext from "../../store/shop-store";
+
 import NewProduct from "../ui/ProductCard/NewProduct";
 const Shop = () => {
-  const ctx = useContext(ShopContext);
+  // const ctx = useContext(ShopContext);
   return (
     <div>
       <section class="page-title page-title-layout5 text-center bg-img">
