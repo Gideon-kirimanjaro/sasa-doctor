@@ -1,0 +1,14 @@
+#shopDiv {
+  background-color: rgb(254, 254, 254);
+  width: 100vw;
+  /* margin: 2px; */
+}
+.logo {
+  align-items: center;
+  padding-right: 5px;
+}
+.img {
+  height: 50px;
+  width: 100px;
+  margin-right: 4px;
+}
