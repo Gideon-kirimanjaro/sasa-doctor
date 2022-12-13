@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { Route, useMatch, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import SubHeader from "../components/SubHeader/SubHeader";
 import SingleProduct from "../components/ui/SingleProduct/SingleProduct";
 import ShopContext from "../store/shop-store";
 
@@ -16,14 +17,16 @@ export default function ProductDetails() {
   });
   console.log(">>>", product);
   return (
-    <div className="content">
+    <div className="container">
+      <SubHeader />
       {product.map((item) => {
         return (
           <SingleProduct
             key={item.id}
             src={item.src}
             id={item.id}
-            productTitle={item.title}
+            productTitle={item.productTitle}
+            productPrice={item.productPrice}
             productDescription={item.productDescription}
           />
         );

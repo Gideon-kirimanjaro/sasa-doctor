@@ -2,15 +2,10 @@ import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Shop.module.css";
 import ShopContext from "../../store/shop-store";
-import ProductCard from "../ui/ProductCard/ProductCard";
-import SideWidget from "../ui/SideWidget/SideWidget";
 import FilterComponent from "../ui/FilterComponent/FilterComponent";
-import SearchComponent from "../ui/SearchComponent/SearchComponent";
-import Cart from "../Cart/Cart";
-import WishList from "../WishList/WishList";
-import Categories from "../Categories/Categories";
 import AccordionCard from "../ui/Accordion/Accordion";
 import Products from "../../pages/Products";
+import SubHeader from "../SubHeader/SubHeader";
 const Shop = () => {
   const ctx = useContext(ShopContext);
   return (
@@ -31,14 +26,7 @@ const Shop = () => {
             </div>
           </div>
         </div>{" "}
-        <div className="d-flex justify-content-between pt-5 ">
-          <img src="/images/LOGO.png" alt="logo" className={styles.img} />
-          <SearchComponent />
-          <div className="d-flex ">
-            <WishList />
-            <Cart />
-          </div>
-        </div>
+        <SubHeader />
         {/* <Categories /> */}
         <div className="d-md-flex">
           <AccordionCard accordionData={ctx.accordionData} />
@@ -47,7 +35,6 @@ const Shop = () => {
               <FilterComponent />
               <Products />
             </div>
-            {/* <SideWidget /> */}
           </div>
         </div>
       </div>

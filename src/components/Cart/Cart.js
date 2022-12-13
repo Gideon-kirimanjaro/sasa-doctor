@@ -1,11 +1,10 @@
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import IconContainer from "../ui/IconContainer/IconContainer";
+import CustomModal from "../ui/CustomModal/CustomModal";
 // import styles from
 const Cart = () => {
   return (
     <div className>
-      <IconContainer containerIcon={faShoppingCart} />
+      <CustomModal />
     </div>
   );
 };

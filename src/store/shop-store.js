@@ -3,14 +3,13 @@ import { createContext } from "react";
 const ShopContext = createContext({});
 export default ShopContext;
 export const ContextProvider = (props) => {
-  const testSrc = "/images/dawa.JPG";
   const data = [
     {
       id: 1,
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
     {
@@ -18,7 +17,7 @@ export const ContextProvider = (props) => {
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
     {
@@ -26,7 +25,7 @@ export const ContextProvider = (props) => {
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
     {
@@ -34,7 +33,7 @@ export const ContextProvider = (props) => {
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
     {
@@ -42,7 +41,7 @@ export const ContextProvider = (props) => {
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
     {
@@ -50,7 +49,7 @@ export const ContextProvider = (props) => {
       productTitle: "Amoxyl",
       productPrice: 3000,
       productDescription:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
   ];
@@ -66,8 +65,28 @@ export const ContextProvider = (props) => {
       categories: ["Pappilion", "Darmol"],
     },
   ];
+  const cartData = [
+    {
+      id: 5,
+      productTitle: "Amoxyl",
+      productPrice: 3000,
+      productDescription:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+      src: "/images/dawa.JPG",
+    },
+    {
+      id: 6,
+      productTitle: "Amoxyl",
+      productPrice: 3000,
+      productDescription:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+      src: "/images/dawa.JPG",
+    },
+  ];
   return (
-    <ShopContext.Provider value={{ data: data, accordionData: accordionData }}>
+    <ShopContext.Provider
+      value={{ data: data, accordionData: accordionData, cartData: cartData }}
+    >
       {props.children}
     </ShopContext.Provider>
   );

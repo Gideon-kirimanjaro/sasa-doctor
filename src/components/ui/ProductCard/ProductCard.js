@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import FilterComponent from "../FilterComponent/FilterComponent";
 import styles from "./ProductCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";

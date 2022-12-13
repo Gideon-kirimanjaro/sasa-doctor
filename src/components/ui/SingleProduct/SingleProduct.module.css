@@ -1,3 +1,31 @@
+#container {
+  height: 200px;
+}
+
 .description {
-  text-align: center;
+  top: 50%;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+.img {
+  padding: 40px;
+  margin: 10px;
+  border: 1px solid grey;
+  height: 400px;
+  width: 400px;
+}
+.title {
+  font-size: 50px;
+}
+.countInput {
+  width: 40px;
+  margin: 3px;
+  padding: 5px;
+  border: 1px solid green;
+}
+.btn {
+  background-color: #51cefd;
+  border: none;
 }
