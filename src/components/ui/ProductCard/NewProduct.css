@@ -1,0 +1,90 @@
+* {
+  outline: 0;
+}
+.product-item {
+  position: relative;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.product__img {
+  position: relative;
+  overflow: hidden;
+}
+.product-item .product__action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.btn__rounded {
+  border-radius: 50px;
+}
+.btn__primary {
+  color: #fff;
+  background-color: #21cdc0;
+}
+.product-item:hover .product__action {
+  opacity: 1;
+  bottom: 30px;
+}
+.btn i,
+.btn span {
+  margin: 0 3px;
+}
+.btn:not(.btn__link):not(.btn__outlined):hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .btn:not(.btn__link) {
+    font-size: 13px;
+    min-width: 120px;
+    height: 40px;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+@media (max-width: 992px) {
+  .mb-30 {
+    margin-bottom: 15px !important;
+  }
+}
+
+section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

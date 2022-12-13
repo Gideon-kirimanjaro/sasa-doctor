@@ -1,0 +1,26 @@
+.pagination li a.current,
+.pagination li a:hover {
+  color: #fff;
+  border-color: #21cdc0;
+  background-color: #21cdc0;
+}
+.pagination li a {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 50%;
+  color: #213360;
+  border: 2px solid #e6e8eb;
+  background-color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+a {
+  /* color: #21cdc0; */
+  /* -webkit-transition: color .3s ease; */
+  /* transition: color .3s ease; */
+}

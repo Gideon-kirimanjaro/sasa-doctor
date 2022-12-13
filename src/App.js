@@ -12,7 +12,7 @@ import Checkout from "./pages/Checkout";
 function App() {
   return (
     <div className="App">
-      <nav className="d-flex justify-content-center">
+      <nav className="d-flex justify-content-center m-2">
         <Link to="/">Pharmacy</Link>
         <Link to="/lab">Lab</Link>
         <Link to="/medical">Medical Products</Link>

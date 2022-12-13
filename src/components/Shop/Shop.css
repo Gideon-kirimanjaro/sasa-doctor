@@ -1,0 +1,48 @@
+.bg-img {
+  background-image: url("/public/assets/images/backgrounds/6.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0e204d;
+  font-family: Quicksand, sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.breadcrumb-item {
+  position: relative;
+  font-size: 14px;
+  display: flex;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center !important;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-title .pagetitle__heading {
+    font-size: 28px !important;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+}
