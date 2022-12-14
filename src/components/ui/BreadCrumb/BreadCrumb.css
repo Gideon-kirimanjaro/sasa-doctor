@@ -23,11 +23,7 @@ section {
   position: relative;
   font-size: 14px;
 }
-a {
-  color: #21cdc0;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
+
 .page-title .breadcrumb-item a,
 .page-title .breadcrumb-item + .breadcrumb-item::before,
 .page-title .breadcrumb-item.active {
@@ -35,6 +31,12 @@ a {
 }
 .mt-0 {
   margin-top: 0 !important;
+}
+
+.page-title .breadcrumb-item a,
+.page-title .breadcrumb-item + .breadcrumb-item::before,
+.page-title .breadcrumb-item.active {
+  color: #435ba1;
 }
 .breadcrumb-item + .breadcrumb-item::before {
   font-family: "Font Awesome 5 Free";

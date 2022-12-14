@@ -1,9 +1,14 @@
 import React from "react";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import "./SingleProduct.css";
-import "font-awesome/css/font-awesome.min.css";
+// import "font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faMinus, faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import ItemTab from "../ItemTab/ItemTab";
 import RelatedProducts from "../../RelatedProducts/RelatedProducts";
 import { Link } from "react-router-dom";
@@ -14,16 +19,35 @@ const SingleProduct = ({
   productDescription,
   productPrice,
 }) => {
+  const crumbData = [
+    {
+      id: 1,
+      link: "home",
+      to: "/",
+      class: "breadcrumb-item",
+    },
+    {
+      id: 2,
+      link: "pharmacy",
+      to: "/",
+      class: "breadcrumb-item",
+    },
+    {
+      id: 3,
+      link: productTitle,
+      class: "breadcrumb-item active",
+    },
+  ];
   return (
     <div>
-      <BreadCrumb />
+      <BreadCrumb crumbData={crumbData} />
       <section class="shop pb-40 pt-0">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <div class="alert alert-primary d-flex flex-wrap justify-content-between align-items-center mb-40">
                 <h3 class="alert__title my-1">
-                  “Green Tea” has been added to your cart.
+                  "{productTitle}" has been added to your cart.
                 </h3>
                 <Link to="/cart" class="btn btn__secondary btn__rounded">
                   View Cart
@@ -63,9 +87,27 @@ const SingleProduct = ({
                   </div>
                   <div class="product__quantity d-flex mb-30">
                     <div class="quantity__input-wrap mr-20">
-                      <i class="decrease-qty fa fa-minus"></i>
-                      <input type="number" value="1" class="qty-input" />
-                      <i class="increase-qty fa fa-plus"></i>
+                      {" "}
+                      <div className="d-flex">
+                        <input type="number" value="1" class="qty-input" />
+                        <div style={{ borderLeft: "solid grey" }}>
+                          <button
+                            style={{
+                              borderBottom: "solid grey",
+                              width: "100%",
+                            }}
+                          >
+                            <FontAwesomeIcon icon={faPlus} />
+                          </button>
+                          <button
+                            style={{
+                              width: "100%",
+                            }}
+                          >
+                            <FontAwesomeIcon icon={faMinus} />
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <a class="btn btn__secondary btn__rounded" href="/">
                       add to cart
@@ -87,17 +129,17 @@ const SingleProduct = ({
                   <ul class="social-icons list-unstyled mb-0">
                     <li>
                       <a href="/">
-                        <i class="fa fa-facebook-f"></i>
+                        <FontAwesomeIcon icon={faInstagram} />
                       </a>
                     </li>
                     <li>
                       <a href="/">
-                        <i class="fa fa-instagram"></i>
+                        <FontAwesomeIcon icon={faFacebookF} />
                       </a>
                     </li>
                     <li>
                       <a href="/">
-                        <i class="fa fa-twitter"></i>
+                        <FontAwesomeIcon icon={faTwitter} />
                       </a>
                     </li>
                   </ul>

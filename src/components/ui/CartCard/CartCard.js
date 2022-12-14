@@ -32,7 +32,7 @@ const CartCard = ({ data }) => {
                             </h5>
                           </td>
                           <td class="cart-product__price">
-                            $ {item.productPrice}
+                            <span>$ {item.productPrice}</span>
                           </td>
                           <td class="cart-product__quantity">
                             <div class="quantity__input-wrap">
@@ -45,7 +45,9 @@ const CartCard = ({ data }) => {
                               <i class="fa fa-plus increase-qty"></i>
                             </div>
                           </td>
-                          <td class="cart-product__total">$ 39.00</td>
+                          <td class="cart-product__total">
+                            <span>$ 39.00</span>
+                          </td>
                         </tr>
                       );
                     })}

@@ -4,40 +4,28 @@ import "./Shop.css";
 // import ShopContext from "../../store/shop-store";
 
 import Product from "../Products/Product";
+import BreadCrumb from "../ui/BreadCrumb/BreadCrumb";
 const Shop = () => {
-  // const ctx = useContext(ShopContext);
+  const crumbData = [
+    {
+      id: 1,
+      link: "home",
+      to: "/",
+      class: "breadcrumb-item",
+    },
+    {
+      id: 2,
+      link: "pharmacy",
+      class: "breadcrumb-item active",
+    },
+  ];
   return (
     <div>
-      <section class="page-title page-title-layout5 text-center bg-img">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="pagetitle__heading">Our Products</h1>
-              <nav>
-                <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    shop
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
+      {" "}
+      <section class="page-title page-title-layout5 text-center d-flex justify-content-center bg-img">
+        <BreadCrumb crumbData={crumbData} />
       </section>
-      {/* <SubHeader /> */}
-      {/* <Categories /> */}
       <Product />
-      {/* <div className="d-md-flex">
-        <div className="d-md-flex justify-content-between">
-          <div>
-            <FilterComponent />
-            <Products />
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
