@@ -3,7 +3,7 @@ import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import "./SingleProduct.css";
 import "font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import ItemTab from "../ItemTab/ItemTab";
 const SingleProduct = ({
   id,

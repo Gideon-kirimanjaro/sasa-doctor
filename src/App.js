@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Lab from "./pages/Lab";
 import ProductDetails from "./pages/ProductDetails";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Medical from "./pages/Medical";
 import Checkout from "./pages/Checkout";
 

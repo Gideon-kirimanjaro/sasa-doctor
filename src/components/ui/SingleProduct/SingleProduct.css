@@ -218,7 +218,6 @@ img {
   height: 50px;
   border: 0;
   outline: 0;
-  -moz-appearance: textfield;
 }
 .fa-plus:before {
   content: "\f067";
