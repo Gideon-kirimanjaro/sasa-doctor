@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Shop.css";
 // import ShopContext from "../../store/shop-store";
 
-import NewProduct from "../ui/ProductCard/NewProduct";
+import Product from "../Products/Product";
 const Shop = () => {
   // const ctx = useContext(ShopContext);
   return (
@@ -29,7 +29,7 @@ const Shop = () => {
       </section>
       {/* <SubHeader /> */}
       {/* <Categories /> */}
-      <NewProduct />
+      <Product />
       {/* <div className="d-md-flex">
         <div className="d-md-flex justify-content-between">
           <div>

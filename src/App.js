@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <nav className="d-flex justify-content-center m-2">
-        <Link to="/">Pharmacy</Link>
+        {/* <Link to="/">Pharmacy</Link>
         <Link to="/lab">Lab</Link>
-        <Link to="/medical">Medical Products</Link>
+        <Link to="/medical">Medical Products</Link> */}
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,11 +1,8 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import SubHeader from "../components/SubHeader/SubHeader";
+
 import SingleProduct from "../components/ui/SingleProduct/SingleProduct";
 import ShopContext from "../store/shop-store";
-
-// nested routes
-// import Offers from "./Offers"
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -18,7 +15,6 @@ export default function ProductDetails() {
   console.log(">>>", product);
   return (
     <div className="container">
-      <SubHeader />
       {product.map((item) => {
         return (
           <SingleProduct
