@@ -82,6 +82,14 @@ export const ContextProvider = (props) => {
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
       src: "/images/dawa.JPG",
     },
+    {
+      id: 4,
+      productTitle: "Amoxyl",
+      productPrice: 3000,
+      productDescription:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
+      src: "/images/dawa.JPG",
+    },
   ];
   return (
     <ShopContext.Provider

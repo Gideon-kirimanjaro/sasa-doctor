@@ -5,6 +5,8 @@ import "font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import ItemTab from "../ItemTab/ItemTab";
+import RelatedProducts from "../../RelatedProducts/RelatedProducts";
+import { Link } from "react-router-dom";
 const SingleProduct = ({
   id,
   src,
@@ -23,9 +25,9 @@ const SingleProduct = ({
                 <h3 class="alert__title my-1">
                   “Green Tea” has been added to your cart.
                 </h3>
-                <a href="cart.html" class="btn btn__secondary btn__rounded">
+                <Link to="/cart" class="btn btn__secondary btn__rounded">
                   View Cart
-                </a>
+                </Link>
               </div>
               <div class="row product-item-single">
                 <div class="col-sm-6">
@@ -39,7 +41,7 @@ const SingleProduct = ({
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <h1 class="product__title">Green Tea</h1>
+                  <h1 class="product__title">{productTitle}</h1>
                   <div class="product__meta-review mb-20">
                     <span class="product__rating">
                       <FontAwesomeIcon icon={faStar} />
@@ -50,7 +52,7 @@ const SingleProduct = ({
                     <span>4 Review(s)</span>
                     <a href="/">Add Review</a>
                   </div>
-                  <span class="product__price mb-20">$ 14.00</span>
+                  <span class="product__price mb-20">$ {productPrice}</span>
                   <div class="product__desc">
                     <p>
                       EGCG is one of the most powerful compounds in green tea.
@@ -102,33 +104,7 @@ const SingleProduct = ({
                 </div>
               </div>
               <ItemTab />
-              <h6 class="related__products-title text-center-xs mb-25">
-                Related Products
-              </h6>
-              <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="product-item">
-                    <div class="product__img">
-                      <img
-                        src="/images/dawa.JPG"
-                        alt="Product"
-                        loading="lazy"
-                      />
-                      <div class="product__action">
-                        <a href="/" class="btn btn__primary btn__rounded">
-                          <i class="icon-cart"></i> <span>Add To Cart</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product__info">
-                      <h4 class="product__title">
-                        <a href="/">Biotin Complex</a>
-                      </h4>
-                      <span class="product__price">$12,99</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <RelatedProducts />
             </div>
           </div>
         </div>

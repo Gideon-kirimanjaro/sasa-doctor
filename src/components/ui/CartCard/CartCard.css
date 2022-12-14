@@ -1,0 +1,144 @@
+.cart-table {
+  margin-bottom: 50px;
+}
+.cart-table .table {
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+.cart-table thead {
+  background-color: transparent;
+}
+.cart-table thead tr th {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #0e204d;
+  border-bottom-width: 0 !important;
+  border-color: #e9e9e9;
+  padding: 15px 0;
+}
+.cart-table .cart-product {
+  position: relative;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.btn__primary {
+  color: #fff;
+  background-color: #21cdc0;
+}
+.cart-table .cart-product__remove {
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 9px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 1px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.fa-times:before {
+  content: "\f00d";
+}
+.cart-table .cart-product__img {
+  width: 50px;
+  margin-right: 20px;
+}
+img {
+  max-width: 100%;
+}
+.cart-table .cart-product__title {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+h5 {
+  font-size: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0e204d;
+  font-family: Quicksand, sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.cart-table .cart-product__price,
+.cart-table .cart-product__total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #848e9f;
+  text-align: center;
+}
+
+.cart-table tbody tr td {
+  padding: 15px;
+  border-color: #e9e9e9;
+  vertical-align: middle;
+}
+.cart-table .cart-product__quantity {
+  text-align: center;
+}
+.cart-table tbody tr td {
+  padding: 15px;
+  border-color: #e9e9e9;
+  vertical-align: middle;
+}
+.cart-table .cart-product__price,
+.cart-table .cart-product__total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #848e9f;
+  text-align: center;
+}
+
+.cart-table tbody tr td {
+  padding: 15px;
+  border-color: #e9e9e9;
+  vertical-align: middle;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.cart-table .cart-product__action td .form-control {
+  font-size: 12px;
+  font-weight: 400;
+  width: 250px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+}
+
+.form-control {
+  font-size: 14px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 55px;
+  background-color: #fff;
+  border: 2px solid #e6e8eb;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.form-control,
+.form-control:focus,
+button,
+button:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.cart-table .cart-product__action td .btn {
+  line-height: 42px;
+  height: 42px;
+  min-width: 134px;
+}

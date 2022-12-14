@@ -8,6 +8,7 @@ import ProductDetails from "./pages/ProductDetails";
 import { Route, Routes } from "react-router-dom";
 import Medical from "./pages/Medical";
 import Checkout from "./pages/Checkout";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/lab" element={<Lab />} />
         <Route path="/medical" element={<Medical />} />
         <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />{" "}
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
