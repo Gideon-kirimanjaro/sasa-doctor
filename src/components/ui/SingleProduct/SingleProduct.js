@@ -3,7 +3,7 @@ import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import "./SingleProduct.css";
 // import "font-awesome/css/font-awesome.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus, faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faTwitter,
@@ -12,6 +12,7 @@ import {
 import ItemTab from "../ItemTab/ItemTab";
 import RelatedProducts from "../../RelatedProducts/RelatedProducts";
 import { Link } from "react-router-dom";
+import QuantityButton from "../QuantityButton/QuantityButton";
 const SingleProduct = ({
   id,
   src,
@@ -86,29 +87,7 @@ const SingleProduct = ({
                     </p>
                   </div>
                   <div class="product__quantity d-flex mb-30">
-                    <div class="quantity__input-wrap mr-20">
-                      {" "}
-                      <div className="d-flex">
-                        <input type="number" value="1" class="qty-input" />
-                        <div style={{ borderLeft: "solid grey" }}>
-                          <button
-                            style={{
-                              borderBottom: "solid grey",
-                              width: "100%",
-                            }}
-                          >
-                            <FontAwesomeIcon icon={faPlus} />
-                          </button>
-                          <button
-                            style={{
-                              width: "100%",
-                            }}
-                          >
-                            <FontAwesomeIcon icon={faMinus} />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    <QuantityButton />
                     <a class="btn btn__secondary btn__rounded" href="/">
                       add to cart
                     </a>

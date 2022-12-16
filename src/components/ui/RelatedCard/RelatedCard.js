@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ItemTab from "../ItemTab/ItemTab";
 import "./RelatedCard.css";
-const RelatedCard = ({ title, price }) => {
+const RelatedCard = ({ title, price, id }) => {
   return (
     <div class="col-sm-6 col-md-6 col-lg-3">
       <div class="product-item">
@@ -14,9 +16,9 @@ const RelatedCard = ({ title, price }) => {
         </div>
         <div class="product__info">
           <h4 class="product__title">
-            <a href="/">Biotin Complex</a>
+            <Link to={`/products/${id}`}>{title}</Link>
           </h4>
-          <span class="product__price">$12,99</span>
+          <span class="product__price">${price}</span>
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@ const RelatedProducts = () => {
               key={i}
               title={item.productTitle}
               price={item.productPrice}
+              id={item.id}
             />
           );
         })}

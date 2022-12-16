@@ -68,7 +68,7 @@ export const ContextProvider = (props) => {
   const cartData = [
     {
       id: 5,
-      productTitle: "Amoxyl",
+      productTitle: "Amoxyl1",
       productPrice: 3000,
       productDescription:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
@@ -76,7 +76,7 @@ export const ContextProvider = (props) => {
     },
     {
       id: 6,
-      productTitle: "Amoxyl",
+      productTitle: "Amoxyl2",
       productPrice: 3000,
       productDescription:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",
@@ -84,7 +84,7 @@ export const ContextProvider = (props) => {
     },
     {
       id: 4,
-      productTitle: "Amoxyl",
+      productTitle: "Amoxyl3",
       productPrice: 3000,
       productDescription:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque dolorem nihil, voluptas corporis tempora provide",

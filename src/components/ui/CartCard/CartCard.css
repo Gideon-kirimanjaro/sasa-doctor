@@ -20,9 +20,7 @@
 .cart-table .cart-product {
   position: relative;
 }
-.mb-30 {
-  margin-bottom: 30px !important;
-}
+
 .btn__primary {
   color: #fff;
   background-color: #21cdc0;
@@ -56,19 +54,7 @@ img {
 h5 {
   font-size: 24px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #0e204d;
-  font-family: Quicksand, sans-serif;
-  text-transform: capitalize;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 20px;
-}
+
 .cart-table .cart-product__price,
 .cart-table .cart-product__total {
   font-size: 16px;
@@ -92,7 +78,7 @@ h6 {
 }
 .cart-table .cart-product__price,
 .cart-table .cart-product__total {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   color: #848e9f;
   text-align: center;
@@ -141,4 +127,16 @@ button:focus {
   line-height: 42px;
   height: 42px;
   min-width: 134px;
+}
+.cart-product__remove {
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 9px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 1px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
 }
