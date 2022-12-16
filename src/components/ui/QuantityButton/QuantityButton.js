@@ -4,7 +4,7 @@ import React from "react";
 
 const QuantityButton = () => {
   return (
-    <div class="quantity__input-wrap mr-20">
+    <div class="quantity__input-wrap ">
       {" "}
       <div className="d-flex">
         <input type="number" value="1" class="qty-input" />

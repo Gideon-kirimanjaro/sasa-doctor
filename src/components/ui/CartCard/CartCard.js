@@ -55,12 +55,12 @@ const CartCard = ({ data }) => {
                         <form class="d-flex flex-wrap">
                           <input
                             type="text"
-                            class="form-control mb-10 mr-10"
+                            class="form-control mb-2 me-5 mt-3"
                             placeholder="Coupon Code"
                           />
                           <button
                             type="submit"
-                            class="btn btn__secondary mb-10"
+                            class="btn btn__secondary mb-2 me-5 mt-3"
                           >
                             Apply Coupon
                           </button>
